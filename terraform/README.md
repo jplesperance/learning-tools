@@ -1,26 +1,11 @@
-# Using Terraform with OpenStack
+# Learning Tools: Terraform
 
-These files were created to allow users to use an example Terraform ([http://terraform.io](http://terraform.io)) configuration with OpenStack. These files require a working Terraform installation and a working OpenStack environment.
+This folder contains materials for working with Terraform.
 
 ## Contents
 
-* **README.md**: This file you're currently reading.
+**aws**: This directory contains a number of different examples of using Terraform with AWS. Refer to the `README.md` in this folder for more details.
 
-* **tf-example**: This directory contains an example Terraform configuration written in Terraform format.
+**oci:** This directory contains a sample Terraform configuration that illustrates how to work with Oracle Cloud Infrastructure (OCI) using the Terraform OCI provider.
 
-* **tf-json-example**: This directory contains an example Terraform configuration written in JSON format.
-
-## Instructions
-
-These instructions assume you've already installed Terraform. These instructions also assume that you have a working OpenStack environment against which to run the Terraform configurations.
-
-1. Edit `provider.tf` or `provider.tf.json` with the correct username, tenant, password, and authentication URL for your OpenStack environment.
-2. Edit `vars.tf` or `vars.tf.json` to provide the correct values for image name, flavor, external network (for the logical router), SSH key pair, and floating IP pool.
-3. From either the `tf-example` or `tf-json-example` directory, run `terraform plan` to see what changes will be made.
-4. If you are happy with the output of #3, run `terraform apply`.
-
-Enjoy!
-
-## License
-
-This material is licensed under the MIT License.
+**openstack:** This directory provides an example Terraform configuration (in both Terraform format as well as JSON format) designed to work with OpenStack.
